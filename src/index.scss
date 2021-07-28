@@ -16,14 +16,28 @@ code {
 h1{
   text-align: center;
   font-size: 50px;
-}
-
-h1 > span{
-  color: #883bcf;
+  
+  span{
+    color: #883bcf;
+  }
 }
 
 .container{
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 800px) {
+  .container{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  h1{
+    font-size: 40px;
+  }
 }

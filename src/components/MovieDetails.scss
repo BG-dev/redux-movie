@@ -18,3 +18,10 @@
         }
     }
 }
+
+@media screen and (max-width: 800px) {
+    .details{
+        width: 40%;
+        align-items: center;
+    }
+}
