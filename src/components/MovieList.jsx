@@ -13,7 +13,6 @@ function MovieList(props){
                     <li className={'movies__list-item' + (props.selectedMovie && movie.title === props.selectedMovie.title ? ' active' : '')} key={movie.title} onClick={() => 
                     {
                         props.selectMovie(movie)
-                        console.log(props.selectedMovie)
                     }}>
                         <span>{movie.title}</span>
                     </li>
